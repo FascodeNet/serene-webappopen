@@ -1,0 +1,7 @@
+if type chromium-browser > /dev/null 2>&1; then
+    echo Success!
+    chromium-browser --app=$1
+elif type google-chrome > /dev/null 2>&1; then
+    echo Success!
+    google-chrome --app=$1
+fi
